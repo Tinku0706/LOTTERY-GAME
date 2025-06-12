@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    
+ .box{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 50px;
+    gap: 10px;
+    font-weight: bold;
+ }  
+  .winningbox {
+  background-color: red;
+  color: rgb(10, 8, 14);
+}
+
+ .lotterysheet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+ }
+.buttonclass, .resultclass {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+.buttonclass{
+    border:0px;
+    background-color: rgb(12, 146, 90);
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    
+
+}
+   </style>
+</head>
+<body>
+    <h2 style="text-align: center;">LOTTERY GAME</h2>
+    <div class="main"> 
+    <div class="lotterysheet" id="lotteryid">
+    </div>
+    <button class="buttonclass" id="btn"> click here </button>
+    <h2  class="resultclass" id="result">  </h2>
+    </div>
+    <script src="a.js"> </script>
+</body>
+</html>
