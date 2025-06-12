@@ -26,11 +26,11 @@ button.addEventListener('click',function(){
     const randomnumber = Math.ceil(Math.random() * 50);
     res.textContent = `You got ${randomnumber}, You won ${gifts[randomnumber - 1]}`;
 
-    // Remove winningbox from all boxes
+    
     const allBoxes = document.querySelectorAll('.box');
     allBoxes.forEach(box => box.classList.remove('winningbox'));
 
-    // Add to the selected one
+  
     const selectedBox = document.getElementById(randomnumber);
     selectedBox.classList.add("winningbox");
     sound.pause()
